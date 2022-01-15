@@ -6,21 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="\style.css">
     <script src="header.js"></script>
-    <title>Movie</title>
+    <title>QnA</title>
+    <style>
+        .linktab.qna{
+            background-color: #3354FF;
+        }
+        .linktab.qna a{
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header include-html="\header.html"></header>
+    <h2>자문자답</h2>
     <div class="tag">
-        <div class="ultag">
-            <span class="content que">Q. 운명을 믿는지?</span>
+        <div class="content que">Q. 운명을 믿는지?
+            <div class="ans-box">
+                <div class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A1. 믿어요.</div>
+                <div class="content ans">A2. 아니여 안믿는데여</div>
+            </div>
         </div>
-        <div class="ultag">
-            <span class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A1. 믿어요.</span>
+
+        <div class="content que">Q. 나를 가장 행복하게 만드는 것은?
+            <div class="ans-box">
+                    <div class="content ans">A1. 내가 좋아하는 음식먹을 때.</div>
+                    <div class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A2. 사랑하는 사람들, 반려동물이랑 있을 때</div>
+                    <div class="content ans">A3. 월급 들어왔을 때</div>
+            </div>
         </div>
-        <div class="ultag">
-            <span class="content ans">A2. 아니여 안믿는데여</span>
+        <div class="content que">Q. 좀비가 나타났다. 나는...?
+            <div class="ans-box">
+                <div class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A1. 출근한다.</div>
+                <div class="content ans">A2. 좀비 죽이러 나선다.</div>
+                <div class="content ans">A3. 숨는다.</div>
+            </div>
         </div>
-    </div>
+        
+        <div class="content que">Q. 0.1mm 공중부양 vs 0.01초 미래를 볼 수 있는 능력
+            <div class="ans-box">
+                <div class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A1. 0.1mm 공중부양.</div>
+                <div class="content ans">A2. 0.01초 미래를 볼 수 있는 능력</div>
+            </div>
+        </div>
+        <div class="content que">Q. 도시 vs 자연?
+            <div class="ans-box">
+                <div class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A1. 도시 (아직은 도시가 좋다)</div>
+                <div class="content ans">A2. 자연</div>
+            </div>
+        </div>
+        <div class="content que">Q. 최근에 맛있게 먹었던 음식은?
+            <div class="ans-box">
+                <div class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A1. 어제 팀장님이 쏘셨던 스테이크</div>
+            </div>
+        </div>
+        <div class="content que">Q. 요즘 재밌게 하는 게임은? 🎮
+            <div class="ans-box">
+                <div class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A1. 바다 거북 스프 게임 🐢</div>
+                <div class="content ans true"><img class="check" src="\akar-icons_check.png" alt="check">A2. 쿠키런 🍞</div>
+            </div>
+        </div>
+
+</div>
+
+    
+</div>
+    <script src="main.js"></script>
     <script>includeHTML();</script>
 </body>
 </html>

@@ -124,11 +124,11 @@ a{
 }
 #tmi{
     text-align: center;
+    margin-bottom: 36px;
 }
 
 /* movie */
-.movieh2{
-}
+
 .movies{
     margin-top: 48px;
     display: flex;
@@ -151,11 +151,12 @@ a{
 
 .gomovieimage{
     background-color: #3354ff;
-    border-radius: 10px;
+    border-radius: px;
     width: 132px;
     height: 48px;
     margin-top: 12px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .gomovieimage:hover, .gomovieimage:active{
@@ -202,15 +203,62 @@ a{
 
 
 /* qna */
-.ans, .que{
+.tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+}
+.content{
+    color: black;
     width: 600px;
     text-align: left;
     padding-left: 24px;
+    margin-bottom: 10px;
 }
 
-.que{
+.content.que{
+    position: relative;
     background-color: #3354FF;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.content.ans{
+    margin-left: -24px;
+    position: relative;
+}
+.content.que::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.content.que.ans-display::before{
+    content: '-';
+}
+
+.content.que .content.ans{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.content.que.ans-display{
+    margin-bottom: 150px;
+}
+
+.content.que.ans-display .content.ans{
+    height: 40px;
+    scrollbar-width: none;
+}
+
+.que:hover{
+    background-color: #1C3DE8;
 }
 
 .check{
@@ -222,4 +270,17 @@ a{
 
 .true{
     color: #3354FF;
+}
+
+
+/* Contact */
+
+.instagram a:hover{
+    background: linear-gradient(to right bottom, #da2e80, #8c3ac3, #feda77);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.instagram a{
+    justify-content: left;
 }
